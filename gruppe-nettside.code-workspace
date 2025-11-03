@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "gruppe-nettside",
+			"path": "gruppe-nettside"
+		},
+		{
+			"path": "../programmering/prg120V"
+		}
+	],
+	"settings": {}
+}
