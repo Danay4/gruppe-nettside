@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="nb">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="En kort personlig side for Farid — Hei og velkommen til min verden." />
+  <title>Farid — Min side</title>
+  <style>
+    :root {
+      --bg: #2b2b2b; /* mørkegrå bakgrunn */
+      --text: #ffffff;
+      --muted: #d1d1d1;
+      --max-width: 900px;
+    }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      width: 100%;
+      height: 220px;
+      overflow: hidden;
+    }
+
+    .flag {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    main {
+      padding: 2rem;
+      flex: 1 0 auto;
+    }
+
+    h1 {
+      margin: 0 0 1rem 0;
+      font-size: 1.75rem;
+    }
+
+    p {
+      margin: 0 0 0.75rem 0;
+      line-height: 1.6;
+      color: var(--muted);
+    }
+
+    footer {
+      padding: 1rem 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #9e9e9e;
+    }
+
+    a:focus, button:focus {
+      outline: 3px solid #fff;
+      outline-offset: 3px;
+    }
+
+    @media (max-width: 520px) {
+      header { height: 140px; }
+      h1 { font-size: 1.25rem; }
+      main { padding: 1rem; }
+    }
+
+    /* skjul tekst visuelt men behold for skjermlesere */
+    .sr-only {
+      position: absolute !important;
+      height: 1px; width: 1px;
+      overflow: hidden;
+      clip: rect(1px, 1px, 1px, 1px);
+      white-space: nowrap;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <figure aria-hidden="false" style="margin:0;">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Flag_of_Iran.svg"
+          alt="Det iranske flagget"
+          class="flag"
+          />
+        <figcaption class="sr-only">Det iranske flagget øverst på siden</figcaption>
+      </figure>
+    </header>
+
+    <main role="main">
+      <h1>hei og velkommen til min verden.</h1>
+      <p><strong>Kort bakgrunn om meg:</strong></p>
+      <p>hei, jeg heter Farid og jeg er IT-student.</p>
+      <noscript><p>Dette nettstedet fungerer best med JavaScript aktivert. Ingen kritisk funksjonalitet krever JavaScript for denne enkle siden.</p></noscript>
+    </main>
+
+    <footer>
+      &copy; <span aria-label="År">2025</span> Farid — Enkel demo-side
+    </footer>
+  </div>
+</body>
+</html>
