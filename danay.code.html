@@ -1,4 +1,49 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kode – Danayt</title>
+  <style>
+    body {
+      font-family: system-ui, Arial, sans-serif;
+      line-height: 1.5;
+      padding: 24px;
+      max-width: 900px;
+      margin: auto;
+      background: #fafafa;
+    }
+    h1 {
+      margin-bottom: 16px;
+    }
+    pre {
+      background: #f5f5f5;
+      padding: 16px;
+      border-radius: 8px;
+      overflow-x: auto;
+    }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.9rem;
+      white-space: pre;
+    }
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Kode – Danayt</h1>
+  <p>➡️ <a href="../danayt.html">Se min nettside</a></p>
+
+  <pre><code id="code"></code></pre>
+
+  <script>
+    const SOURCE = `<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -40,5 +85,9 @@
     </div>
 
     <p><a href="https://adey.com.et/calendar/ethiopian-calendar" target="_blank">Check the Ethiopian Calendar here</a></p>
+</body>
+</html>`;
+    document.getElementById("code").textContent = SOURCE;
+  </script>
 </body>
 </html>
